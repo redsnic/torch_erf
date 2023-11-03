@@ -62,8 +62,7 @@ class ERF_1994(torch.nn.Module):
     def forward(self, z):
         """Compute the error function of a complex number
 
-        based solely on the algorithm proposed in:
-        Weideman, J. Andre C. "Computation of the complex error function." SIAM Journal on Numerical Analysis 31.5 (1994): 1497-1518
+        The result is computed by manipulating the Faddeeva function.
 
         Args:
             z (torch.Tensor): A tensor of complex numbers (any shape is allowed)
